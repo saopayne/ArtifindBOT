@@ -44,7 +44,7 @@ app.post('/webhook/', function (req, res) {
                 sendGenericMessage(sender)
                 continue
             }
-            sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+            sendTextMessage(sender, "How can I help you? You sent this ->: " + text.substring(0, 200))
         }
         if (event.postback) {
             text = JSON.stringify(event.postback)
@@ -86,9 +86,9 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
-                    "subtitle": "Element #1 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "title": "Mechanic",
+                    "subtitle": "Different types of mechanic",
+                    "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiUjZis3NDMAhXlKsAKHUP3AtQQjRwIBw&url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fworld-africa-11429067&psig=AFQjCNEVRhLVUW0l2OnsBlhDS-hjlJa9rw&ust=1463011408007930",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.messenger.com",
@@ -99,9 +99,9 @@ function sendGenericMessage(sender) {
                         "payload": "Payload for first element in a generic bubble",
                     }],
                 }, {
-                    "title": "Second card",
-                    "subtitle": "Element #2 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "title": "Tailor",
+                    "subtitle": "Different tailor specialisations",
+                    "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
                     "buttons": [{
                         "type": "postback",
                         "title": "Postback",
