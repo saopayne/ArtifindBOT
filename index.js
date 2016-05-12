@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 
 // Index route
 app.get('/', function (req, res) {
-    res.send('Hello world, I am a healthfacts chat bot')
+    res.send('Hello world, I am an Artifind chat bot')
 })
 
 // for Facebook verification
@@ -31,6 +31,12 @@ app.get('/webhook/', function (req, res) {
 // Spin up the server
 app.listen(app.get('port'), function() {
     console.log('running on port', app.get('port'))
+})
+
+
+//Batch notify users of a messages on the Facebook page (still open to ideas)
+app.post('/new-messages/', function () {
+    console.log('send messages to admin');
 })
 
 app.post('/webhook/', function (req, res) {
@@ -57,6 +63,7 @@ app.post('/webhook/', function (req, res) {
 
 
 var token = "EAAY0SIK3SQ8BAJ0AEurmJXDa9DAxMMuvE8tBJ3IvMTgoZB8LZAaOtgVwdMoV2ZABwf0ePlEFA9QgKmtBO8y6x4QHXpFkjEnyMdL30pOm0sGnZBpWzUcVBcCTS0O7FSeh9IqiRKEbgcWRWH7C5PUKoLeZBH4VZBYPbMyoL28438bgZDZD"
+
 
 function sendTextMessage(sender, text) {
     messageData = {
@@ -107,7 +114,27 @@ function sendGenericMessage(sender) {
                         "title": "Postback",
                         "payload": "Payload for second element in a generic bubble",
                     }],
-                }]
+                },
+                    {
+                    "title": "Barber",
+                    "subtitle": "Different barber specialisations",
+                    "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Postback",
+                        "payload": "Payload for second element in a generic bubble",
+                     }],
+                },
+                    {
+                        "title": "Hairdresser",
+                        "subtitle": "Different hairdresser specialisations",
+                        "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
+                        "buttons": [{
+                            "type": "postback",
+                            "title": "Postback",
+                            "payload": "Payload for second element in a generic bubble",
+                        }],
+                    }]
             }
         }
     }
