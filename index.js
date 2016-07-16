@@ -94,7 +94,7 @@ function sendGenericMessage(sender) {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Mechanic",
-                    "subtitle": "Different types of mechanic",
+                    "subtitle": "All mechanics",
                     "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiUjZis3NDMAhXlKsAKHUP3AtQQjRwIBw&url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fworld-africa-11429067&psig=AFQjCNEVRhLVUW0l2OnsBlhDS-hjlJa9rw&ust=1463011408007930",
                     "buttons": [{
                         "type": "web_url",
@@ -103,36 +103,36 @@ function sendGenericMessage(sender) {
                     }, {
                         "type": "postback",
                         "title": "Postback",
-                        "payload": "Payload for first element in a generic bubble",
+                        "payload": "Mechanic",
                     }],
                 }, {
                     "title": "Tailor",
-                    "subtitle": "Different tailor specialisations",
+                    "subtitle": "All  tailors",
                     "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
                     "buttons": [{
                         "type": "postback",
                         "title": "Postback",
-                        "payload": "Payload for second element in a generic bubble",
+                        "payload": "Tailor",
                     }],
                 },
                     {
                     "title": "Barber",
-                    "subtitle": "Different barber specialisations",
+                    "subtitle": "All barbers",
                     "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
                     "buttons": [{
                         "type": "postback",
                         "title": "Postback",
-                        "payload": "Payload for second element in a generic bubble",
+                        "payload": "Barber",
                      }],
                 },
                     {
                         "title": "Hairdresser",
-                        "subtitle": "Different hairdresser specialisations",
+                        "subtitle": "All hairdressers",
                         "image_url": "https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiViIC83NDMAhXKLMAKHVdLA2gQjRwIBw&url=http%3A%2F%2Fzikoko.com%2Flist%2Fthe-complete-guide-to-being-a-nigerian-tailor%2F&bvm=bv.121421273,d.ZGg&psig=AFQjCNE8M0vUabYb8F7CIALheztw7gHLUQ&ust=1463011440029373",
                         "buttons": [{
                             "type": "postback",
                             "title": "Postback",
-                            "payload": "Payload for second element in a generic bubble",
+                            "payload": "Hairdresser",
                         }],
                     }]
             }
